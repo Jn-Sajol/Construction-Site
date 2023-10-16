@@ -1,11 +1,9 @@
 
 const App = () => {
   return (
-    <div>
-    <h1 className=" text-red-200 text-3xl font-bold underline">
-    Hello world! from new project
-  </h1>
-    </div>
+    <BrowserRouter>
+    
+    </BrowserRouter>
   )
 }
 
