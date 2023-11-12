@@ -1,4 +1,5 @@
 import express from "express";
+import userRouter from './routes/user.route.js'
 const app = express();
 const port = 8000;
 
@@ -16,9 +17,10 @@ try {
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
-app.get("/hello", (req, res) => {
-  res.send("hello from helllo site");
-});
+
+app.use("/api",userRouter)
+
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
