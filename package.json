@@ -12,6 +12,7 @@
     "url": "git+https://github.com/Jn-Sajol/Construction-Site.git"
   },
   "keywords": [],
+  "type": "module",
   "author": "",
   "license": "ISC",
   "bugs": {
