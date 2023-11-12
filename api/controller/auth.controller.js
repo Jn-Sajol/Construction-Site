@@ -1,6 +1,6 @@
 import User from '../models/user.model.js';
 import bcrypt from 'bcrypt';
-export const signIn = async (req, res) => {
+export const signIn = async (req, res,next) => {
   try {
     const { username, email, password } = req.body;
 
@@ -15,7 +15,6 @@ export const signIn = async (req, res) => {
 
     res.status(201).json({ message: 'Registration successful' });
   } catch (error) {
-    console.error(error);
-    res.status(500).json({ error: 'Internal Server Error' });
+    next(error)
   }
 };
