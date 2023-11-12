@@ -1,7 +1,10 @@
 
 const About = () => {
+  const friends = [ 'Peter', 'Maya']
   return (
-    <div>About</div>
+    <div>
+    <h1>{friends}</h1>
+    </div>
   )
 }
 

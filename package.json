@@ -1,5 +1,25 @@
 {
+  "name": "real-state",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon api/index.js",
+    "start": "nodemon api/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jn-Sajol/Construction-Site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jn-Sajol/Construction-Site/issues"
+  },
+  "homepage": "https://github.com/Jn-Sajol/Construction-Site#readme",
   "dependencies": {
-    "react-icons": "^4.11.0"
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1"
   }
 }
