@@ -5,7 +5,7 @@ import {
   signInStart,
   signInSuccess,
   signInFailure,
-} from "../redux/user/user.slice";
+} from "../redux/user/userSlice";
 
 const SignIn = () => {
   const dispatch = useDispatch();
