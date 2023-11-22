@@ -7,7 +7,7 @@ export const signUp = async (req, res, next) => {
     const { username, email, password } = req.body;
 
     // Hash the password
-    const hashedPassword = await bcrypt.hash(password, 10);
+    const hashedPassword = await bcryptjs.hash(password, 10);
 
     // Create a new user with the hashed password
     const newUser = new User({ username, email, password: hashedPassword });
@@ -65,3 +65,12 @@ export const google = async (req, res, next) => {
     next(error)
   }
 }
+
+export const signOut = async (req, res, next) => {
+  try {
+    res.clearCookie('access_token');
+    res.status(200).json('User has been logged out!');
+  } catch (error) {
+    next(error);
+  }
+};
