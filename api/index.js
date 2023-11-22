@@ -1,8 +1,10 @@
 import express from "express";
+import cookieParser from "cookie-parser";
 import userRouter from "./routes/user.route.js";
 import authRouter from "./routes/auth.route.js";
 const app = express();
 app.use(express.json());
+app.use(cookieParser())
 const port = 8000;
 
 import dotenv from "dotenv";
@@ -20,7 +22,7 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.use("/api", userRouter);
+app.use("/api/user", userRouter);
 app.use("/api/auth", authRouter);
 
 app.use((err, req, res, next) => {
