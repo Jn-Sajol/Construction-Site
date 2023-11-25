@@ -3,7 +3,6 @@
 ### usefull technologies
 *React
 *Node
-*
-*
-*
-*
+*Express
+*Redux
+*MongoDb
