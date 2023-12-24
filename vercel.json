@@ -1,4 +1,3 @@
 {
-    "output": "dist"
+    "buildCommand": "next build"
   }
-  
